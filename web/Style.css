@@ -1,0 +1,262 @@
+﻿@charset "UTF-8";
+
+     
+        #container {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: solid;
+              border-color: #6d6d6d;
+            border-width: 1px;
+            background-color: lightgray;
+            
+        }
+
+        #logo {
+            background-image:url(Zdjecia/tlo3.png);
+            color: #960606;
+            text-align: left;
+            padding: 2px 20px 50px;
+            font-size:100px;
+            text-shadow:0 0 10px grey;
+            border-bottom-style: solid;
+             border-color: #6d6d6d;
+            border-width: 0.5px;
+
+        }
+        
+        img.logo
+        {
+            float:right;
+            width: 147px;
+        }
+
+        .stronaglowna
+        {
+            display:block;
+            width:auto;
+            height:auto;
+        }
+        .stronaglowna:link
+        {
+            text-decoration: none;
+            color: #960606;
+            display:block;
+        }
+        .stronaglowna:visited
+        {
+            text-decoration: none;
+            color: #960606;
+            display:block;
+        }
+        #container2
+        {
+            position:relative;
+        }
+        #menu {
+            background-image:url(Zdjecia/tlo.png);
+            width: 198px;
+            height:auto;
+            font-size:20px;
+            border-right-style: solid;
+              border-color: #6d6d6d;
+            border-width: 0.5px;
+            float: left;
+            position:absolute;
+            top: 0; 
+            bottom:0;
+            padding:10px;
+        }
+        ul.ulmenu a 
+        {
+            color: #960606;
+        }
+         .tytul
+        {
+            font-size:25px;
+            font-weight:900;
+            text-align:left;
+        }
+            .zmiana {
+               font-size:21px !important;
+            }
+        #content {
+            margin-left:220px;
+            margin-bottom:30px;
+            min-height:500px;
+            float: left;
+            padding: 0px 20px;
+            width: 740px;
+            text-align: center;
+            text-align:justify;
+
+        }
+        .tekst
+        {
+            color:#191919;
+            font-size: 18px;
+        }
+        .naglowek
+        {
+            font-weight: 700;
+            font-size:22px;
+            color:#191919;
+        }
+        .tytul
+        {
+            font-size:25px;
+            color:#191919;
+            font-weight:900;
+            text-align:left;
+        }
+        img.zdjecia
+        {
+           margin-left: 40px;
+           margin-bottom:15px;
+           max-width: 650px;
+           max-height:375px;
+        }
+        img.zdjecie
+        {
+            width: 200px; 
+            margin:15px;
+        }
+          #animacja {
+          width:770px;
+          float: left;
+          border:4px solid #DDD;
+          font-size: 10px;
+          text-shadow:none;
+          background-color:#EEE;
+          overflow:hidden;
+          position:relative;
+          height:17px;
+          line-height:2.2em;
+          margin:20px 0;
+         
+        }
+
+        #animacja > p {
+              position:absolute;
+              margin:0;
+              white-space:nowrap;
+              animation:przesuwanie 18s linear infinite;
+        }
+        @keyframes przesuwanie
+        {
+          0% { transform:translateX(130%); }
+          100% { transform:translateX(-100%); }
+        }
+        #footer {
+            background-color: #960606;
+            color: white;
+            text-align: center;
+            padding: 10px 20px 5px;
+            border-top-style: solid;
+              border-color: #6d6d6d;
+            border-width: 0.5px;
+            
+        }
+       
+        .clearfix{
+            clear:both;
+        }
+        #menu span.expand {
+         display: none;
+    }
+
+        #obraz1
+        {
+            float:right; 
+            height:150px;
+        }
+a
+{
+text-decoration:none;
+}
+@media (max-width: 768px) {
+
+                                        #container, #container2, #footer {
+                                            width: auto;
+                                            margin: 0px;
+                                        }
+                                        #logo {
+                                            padding:0;
+                                            font-size: 2.5em;
+                                            line-height:2.5em;
+                                             overflow:hidden;
+                                        }
+                                        #menu
+                                        {
+                                            width:100%;
+                                            padding: 0px;
+                                            position:static;
+                                            height:auto;
+                                            
+                                           
+                                            
+                                        }
+                                        #menu span.expand {
+                                           
+                                                display: inline-block;
+                                                float: left;
+                                                font-weight: normal;
+                                                font-size: 50px;
+                                                margin-top: -12px;
+                                                margin-left: 45%;
+                                     }
+                                        #menu nav
+                                        {
+                                           /* display:none;*/
+                                        }
+                                        
+                                       .ulmenu .active
+                                        {
+                                             display: none;
+                                        }
+                                       .ulmenu
+                                       {
+                                           
+                                           list-style:none;
+                                           text-align:center;
+                                           margin-left:-12%;
+                                           margin-top:80px;
+                                       }
+
+                                        #content
+                                        {
+                                            width:90%;
+                                            float:left;
+                                            position:relative;
+                                            margin-top:5%;
+                                            overflow:hidden;
+                                            margin:0 0 0;
+                                        }
+                                        p.tekst
+                                        {
+                                            font-size:1.5em;
+                                        }
+                                        .tytul
+                                        {
+                                            display:none;
+                                        }
+                                        
+                                        #animacja
+                                        {
+                                            display:none;
+                                        }
+                                        img.logo {
+                                            height: 2.6em;
+                                            width:auto;
+                                        }
+                                        img.zdjecia
+                                        {
+                                            height:5em;
+                                            width:auto;
+                                        }
+                                        h2.tytul
+                                        {
+                                           display: none;
+                                        }
+                                        
+                                    }
